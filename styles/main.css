@@ -1,0 +1,33 @@
+html {
+    height: 100%;  
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Open Sans'; 
+    color: black; 
+    min-height: 100%;
+}
+
+table {
+    background-color: lightgray; 
+}
+
+th {
+    white-space: pre; 
+    border: 1px solid black; 
+}
+
+.tableHead {
+    padding-bottom: 5px;
+    border-bottom: 5px solid red;
+}
+
+.tableLeft {
+    padding-right: 5px;
+    border-right: 5px solid red;
+}
+
+.tableInside {
+    padding: 15px; 
+}
