@@ -30,14 +30,25 @@ PrisonersDilemma.game = function(roundsToPlay, player1, player2) {
         player1.prevCard = playedCards[0];
         player2.prevCard = playedCards[1];
         
+        var resultWindow = document.getElementById('simResults');
+        var p = document.createElement('p');
+        var log = document.createTextNode("\nRound#" + i + " Start:\nplayer1's card: " + this.roundHistory[i][0][0] +
+            "\nplayer2's card: " + this.roundHistory[i][0][1] + "\nplayer1's points this round: " +
+            this.roundHistory[i][1][0] + "\nplayer2's points this round: " + this.roundHistory[i][1][1] +
+            "\nplayer1 total: " + player1.points + "\nplayer2 total: " + player2.points + 
+            "\nRound End.\n-----------------\n");
+        p.appendChild(log);
+        resultWindow.appendChild(p);
+
+        
         //for testing purposes.
-        console.log("\nRound#" + i + " Start:")
-        console.log("player1's card: " + this.roundHistory[i][0][0]);
-        console.log("player2's card: " + this.roundHistory[i][0][1]);
-        console.log("player1's points this round: " + this.roundHistory[i][1][0]);
-        console.log("player2's points this round: " + this.roundHistory[i][1][1]);
-        console.log("player1 total: " + player1.points);
-        console.log("player2 total: " + player2.points + "\nRound End.");
+//        console.log("\nRound#" + i + " Start:")
+//        console.log("player1's card: " + this.roundHistory[i][0][0]);
+//        console.log("player2's card: " + this.roundHistory[i][0][1]);
+//        console.log("player1's points this round: " + this.roundHistory[i][1][0]);
+//        console.log("player2's points this round: " + this.roundHistory[i][1][1]);
+//        console.log("player1 total: " + player1.points);
+//        console.log("player2 total: " + player2.points + "\nRound End.");
     }
 };
 
@@ -62,4 +73,6 @@ PrisonersDilemma.pointAssign = function(cards) {
 var Bob = new Strategy('bob', bobStrat);
 var Jim = new Strategy('jim', jimStrat);
 
-PrisonersDilemma.game(100, Bob, Jim);
+document.getElementsByClassName('runSim')[0].addEventListener("click", function() {
+    PrisonersDilemma.game(100, Bob, Jim)
+});
