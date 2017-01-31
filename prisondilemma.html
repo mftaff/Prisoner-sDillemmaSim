@@ -7,10 +7,10 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body>
-        <header>
-            <h1>GAME THEORY SIMULATION</h1>
-        </header>
-        <section>
+        <section class="block head">
+            <header>
+                <h1>GAME THEORY SIMULATION</h1>
+            </header>
             <p>The Rules are simple. Two players, 
                each with two cards: "Cooperate" or 
                "Defect". Turns are played simultaneously
@@ -19,26 +19,34 @@
                possible outcomes. 
             </p> 
         </section>
-        <table>
-            <tr>
-                <th></th>
-                <th class="tableHead">Cooperate</th>
-                <th class="tableHead">Defect</th>
-            </tr>            
-            <tr>
-                <th class="tableLeft">Cooperate</th>
-                <th class="tableInside">Reward- 3 Points</th>
-                <th class="tableInside">Sucker- 0 points</th>
-            </tr>            
-            <tr>
-                <th class="tableLeft">Defect</th>
-                <th class="tableInside">Temptation- 5 points</th>
-                <th class="tableInside">Punishment- 1 point</th>
-            </tr>
-        </table>
-        <footer>
-            <h3>Did it work?</h3>
-        </footer>
+        <section class="block centerTop">
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="tableHead">Cooperate</th>
+                    <th class="tableHead">Defect</th>
+                </tr>            
+                <tr>
+                    <th class="tableLeft">Cooperate</th>
+                    <th class="tableInside">Reward- 3 Points</th>
+                    <th class="tableInside">Sucker- 0 points</th>
+                </tr>            
+                <tr>
+                    <th class="tableLeft">Defect</th>
+                    <th class="tableInside">Temptation- 5 points</th>
+                    <th class="tableInside">Punishment- 1 point</th>
+                </tr>
+            </table>
+            <div class="runButton">
+                <button type="button">Run Sim</button>
+            </div>
+        </section>
+        <section class="block foot">
+            <footer>
+                <h3>Did it work?</h3>
+            </footer>
+        </section>
+        
         <script src="scripts/prisondilemma.js"></script>
     </body>
 </html>

@@ -6,16 +6,38 @@ html {
 body {
     font-family: 'Open Sans'; 
     color: black; 
-    min-height: 100%;
+    background-color: #c99c2b;
+}
+
+.block {
+    padding-left: 5px;
+    width: 100%;
+}
+
+.head {
+    position: absolute
+    top: 0;
+    padding-top: 5px;
+    border-bottom: 5px solid #e8c508;
+    background-color: darkgoldenrod;
+}
+
+.centerTop {
+    position: absolute;
+    padding-top: 5px;
 }
 
 table {
+    position: relative;
+    float: left;
     background-color: lightgray; 
+    padding: 1px;
+    border-radius: 2%;
 }
 
 th {
     white-space: pre; 
-    border: 1px solid black; 
+    border: 1px solid black;
 }
 
 .tableHead {
@@ -30,4 +52,38 @@ th {
 
 .tableInside {
     padding: 15px; 
+}
+
+.runButton {
+    position: relative;
+    padding: 55px;
+    left: 4.6rem; 
+    float: left;
+/*    background-color: #cc1c1c;*/
+    border-radius: 50%;
+    background: radial-gradient(#cc1c1c 20%, rgba(201,156,43, 0) 70%)
+}
+
+.runButton button {
+    color: #950d0d;
+    background-color: indianred;
+    border-radius: 50%;
+    border: 1px outset red;
+}
+
+.runButton button:hover {
+    cursor: pointer;
+    transition: 80ms;
+    border: 2px outset #d30b0b;
+}
+
+.runButton button:active {
+    border: 2px inset red;
+}
+
+.foot {
+    position: absolute;
+    bottom: 0;
+    background-color: darkgoldenrod;
+    
 }
