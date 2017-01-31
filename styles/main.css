@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans'; 
     color: black; 
     background-color: #c99c2b;
+    height: 100%;
 }
 
 .block {
@@ -24,13 +25,17 @@ body {
 
 .centerTop {
     position: absolute;
+    left: 2%;
+    height: 100%;
+    width: 98%;
+    padding-left: 0;
     padding-top: 5px;
 }
 
 table {
     position: relative;
     float: left;
-    background-color: lightgray; 
+    background-color: lightgoldenrodyellow; 
     padding: 1px;
     border-radius: 2%;
 }
@@ -56,7 +61,7 @@ th {
 .runButton {
     position: relative;
     padding: 55px;
-    left: 4.6rem; 
+    left: 3.1rem; 
     float: left;
 /*    background-color: #cc1c1c;*/
     border-radius: 50%;
@@ -80,8 +85,35 @@ th {
     border: 2px inset red;
 }
 
+.result {
+    position: absolute;
+    left: 1%;
+    top: 42%;
+    width: 98%;
+    height: 49%;
+    padding-left: 0;
+}
+
+.resultBorder {
+    position: relative;
+    left: 1%;
+    top: 1%;
+    width: 98%;
+    height: 98%;
+    background-color: palegoldenrod;
+    border-radius: 10%;
+}
+
+.result .resultBorder #simResults {
+    position: relative;
+    left: 2.5%;
+    top: 5%;
+    width: 95%;
+    height: 90%;
+    overflow: auto;
+}
 .foot {
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     background-color: darkgoldenrod;
 }

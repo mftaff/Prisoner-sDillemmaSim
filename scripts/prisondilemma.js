@@ -39,7 +39,9 @@ PrisonersDilemma.game = function(roundsToPlay, player1, player2) {
             "\nRound End.\n-----------------\n");
         p.appendChild(log);
         resultWindow.appendChild(p);
-
+        
+        
+        
         
         //for testing purposes.
 //        console.log("\nRound#" + i + " Start:")
